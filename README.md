@@ -1,7 +1,3 @@
-# P1--healthy-tuples
-<<<<<<< HEAD
-**Analysis of Framingham Heart Study
-=======
 
 **Analysis of Framingham Heart Study
 
