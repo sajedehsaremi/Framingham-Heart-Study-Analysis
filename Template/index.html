@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>Coronary Heart Disease Dashboard</title>
+    <!-- bring in bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="row">
+  <div class="col-md-12">   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Home</a>     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">       
+        <ul class="navbar-nav mr-auto">   
+          <li class="nav-item active">
+            <a class="nav-link" href="Observation.html"> Observation <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html"> Data </a>
+          </li>       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ML Models
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="MaxTemperature.html">Ml_1        
+              <a class="dropdown-item" href="Cloudiness.html">ML_2</a>
+              <a class="dropdown-item" href="WindSpeed.html">ML_3</a>
+              <a class="dropdown-item" href="WindSpeed.html">ML_4</a>
+              <a class="dropdown-item" href="WindSpeed.html">ML_5</a>
+            </div>          
+          </li>                   
+        </ul>   
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <section class="posts">
+    <div class="row">
+      <div class="col-md-9">
+        <h1>Coronary Heart Disease Prediction</h1>
+        <hr>
+          <div>
+            <a href="https://www.nhlbi.nih.gov/science/framingham-heart-study-fhs">
+            <img src="Resources/assets/images/Heart2.jpg",alt="City Lat vs. Temp", style="width:300px", class="float-left">
+            </a> 
+          </div>
+            <div>
+              <p>Problem: Cardiovascular disease is presently the leading problem of death worldwide. It is most common in the US. 
+                Every 40 seconds one person dies from cardiovascular disease. About 660,000 people in the US die from 
+                heart disease each year, that’s 1 in every 4 deaths. Diastolic Blood Pressure and Systolic Blood Pressure 
+                are also related to cardiovascular risk. Thus, a feasible and accurate prediction of heart-related diseases
+                is very important. This research intends to pinpoint the most risk factors of heart diseases.
+                We are going to analyse the datasets and compare the accuracy score in multiple the Machine Learning models. We will pick the best
+                model which gives us the highest accuracy score.<br> <br>
+                
+                Machine Learning Models:<br>
+                1)	Logistic Regression <br>
+                2)	K-Nearest Neighbor <br>
+                3)	Super Vector Machine <br>
+                4)	Random Forest 
+ 
+              </p>
+              <p>The dataset was collected from Kaggle website, from an ongoing Cardiovascular study of Framingham. 
+                The goal of the Machine Learning model is to predict whether the patient has a 10-year risk of future heart diseases. 
+                The Framingham dataset consists of 4238 patient’s records with 17 attributes.
+
+                Our goal is to prepare the dataset for Machine Learning models to predict more accurate score based on 
+                user’s input of certain features. We will clean the data, analyze, and graph the data to have better 
+                understanding. We will test and train the clean data with each of Machine Learning model and pick the 
+                best model that produces high accuracy score. 
+               </p> 
+           </div>
+      </div>
+      <div class="col-md-3">
+        <h1>Machine Learning Models</h1>
+        <hr>          
+          <div>
+            <div class = "row">
+              <div class = 'col-md-6 col-3'>
+                <a href="MaxTemperature.html">
+                <img src="Resources/assets/images/Fig1.png", alt="City Lat vs. Temp", class="center img-fluid">
+                </a> 
+              </div>
+              <div class = 'col-md-6 col-3'>
+                <a href="Humidity.html">
+                <img src="Resources/assets/images/Fig2.png", alt="City Lat vs. Humidity", class="center img-fluid">
+                </a>
+              </div>        
+              <div class = 'col-md-6 col-3'>
+                <a href="Cloudiness.html">
+                <img src="Resources/assets/images/Fig3.png", alt="City Lat vs. Cloudiness", class="center img-fluid">
+                </a>
+              </div>   
+              <div class = 'col-md-6 col-3'>      
+                <a href="WindSpeed.html">
+                <img src="Resources/assets/images/Fig4.png",alt="City Lat vs. Wind Speed", class="center img-fluid">   
+                </a>
+              </div>
+            </div>
+          </div>      
+      </div><div class="main-block">
+        <div class="left-part">        
+         </div>     
+          <form action="/">
+            <h3>Enter below information to see if you would develope the Coronary Heart Disease in 10 years.</h3>
+            <div class="info">
+              <input class="fname" type="text" name="name" placeholder="Gender:Male=1,Female=0">
+              <input type="text" name="name" placeholder="Blood Presure">
+              <input type="text" name="name" placeholder="Age">
+              <input type="text" name="name" placeholder="Smoker:Yes=1,No=0">
+              <input type="text" name="name" placeholder="Total Chol">
+              <input type="text" name="name" placeholder="BMI">
+              <input type="text" name="name" placeholder="HeartRate">
+              <input type="text" name="name" placeholder="Glucose">
+            </div>        
+            <button type="submit" href="/">Submit</button>
+          </form>
+          <div class = "row">
+            <div class = 'col-md-6 col-4'>
+              <a><img src="Resources/assets/images/Correlation between different fearures.png",alt="Image", style="width:600px", class="float-left"></a>
+            </div>
+            <div class = 'col-md-6 col-6'>
+              <a><img src="Resources/assets/images/imp[ortant_features.png",alt="Important Features", style="width:400px", class="float-left"></a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>    
+</div> 
+   
+</body>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+ <!-- Always remember to call the above files first before calling the bootstrap.min.js file --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</html>

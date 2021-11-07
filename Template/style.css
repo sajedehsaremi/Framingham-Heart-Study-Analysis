@@ -1,0 +1,93 @@
+h1 {
+  color: rgb(13, 95, 122);
+  font-size: 15px;
+  padding: 4px;
+  /* text-align: left; */
+  margin-top: 15px;
+  text-align:center;
+ 
+}
+h2{
+  margin-top: 10px;
+  color: rgb(13, 95, 122);
+  text-align:center;
+  }
+p {
+  text-align:left;
+  font-size: 17px;
+  margin-top: 17px;
+  text-indent: 5;
+ 
+
+  }
+
+h3{
+  text-align: left;
+  font-size: 15px;
+  color: rgb(13, 95, 122);
+  margin-top: 10px;
+  left: 18%;
+  padding: 6px;
+}
+
+ .navbar-nav {
+  margin-left: 80%;
+  }
+.styled-table {
+  border-collapse:collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 500px;
+  box-shadow: ivory;
+  border: none;
+}
+.styled-table thead tr {
+  background-color: lightskyblue;
+  color: black;
+  text-align: left;
+}
+.styled-table th
+{
+    padding: 10px 12px;
+}
+.top-left {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: rgb(13, 95, 122);
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-style :unset;
+}
+.top-right {
+  position: absolute;
+  top: 22%;
+  right: 16px;
+  right: 40%;
+  color: rgb(13, 95, 122);
+  font-size: 1.3em;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  /* background-color: lightskyblue; */
+} 
+html{
+  position: realtive;
+  min-height: 100%;
+}
+ .navbar {
+    background-color: lightseagreen;
+    color: black;
+  }
+.navbar-brand{
+  color: black;
+}
+/* .nav-link {
+  color: black;
+}  */
+.bg-light {
+  background-color: #799ec2!important;
+}

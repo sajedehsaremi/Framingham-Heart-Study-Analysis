@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>Coronary Heart Disease Dashboard</title>
+    <!-- bring in bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">   
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="Observation.html">Observation <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="MaxTemperature.html">Max temperature</a>
+                    <a class="dropdown-item" href="Humidity.html">Humidity</a>              
+                    <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="WindSpeed.html">WindSpeed</a>
+                  </div>
+                </li>          
+              </ul>        
+            </div>
+          </nav>
+        </div>
+      </div>
+    <div class="container">
+        <article class="row description2-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Observation</h1>
+                    <hr>
+                    <h3>Click any plot to get an in-depth analysis</h3>
+                </div>
+            </div>
+        </article>
+        <br>
+        <div class="row">
+            <div class="column-md-6">
+                <h3>Distribution of Positive and Negative cases of TenYearCHD</h3>
+                  <img src="Resources/assets/images/CHDPositive&NegativeCount.png",alt="vs. Max Temperature", style="width:350px", class="float-left">
+                  <h1>We can see that the proportion is not well balanced. We clearly need to perform analysis of featuresto predict 
+                    more accuaracy score. In this case, we can perform undersampling method. The undersampling aims to descrese
+                    the number of instatnces from the over represented class in the dataset. This undersmapling method will decrease
+                    the number of fraud transaction in our dataset. It is important to balance our dataset other wise most of the 
+                    classic algorithms will heavely focus on the majority class. In our case it will redicte the majority class.
+                  </h1>                
+            </div>
+            <div class="column-md-6">
+                <h1>Place another graph</h1>
+                <a href="Cloudiness.html"><img src="Resources/assets/images/Fig3.png",alt="City Lat vs. Cloudiness", style="width:350px", class="float-left"></a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+ <!-- Always remember to call the above files first before calling the bootstrap.min.js file --> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</html>
